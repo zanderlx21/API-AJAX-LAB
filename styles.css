@@ -1,0 +1,22 @@
+div {
+   display: block;
+}
+
+h3 {
+  border-bottom: 2px solid green; 
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;; 
+}
+
+img {
+    height: 200px;
+}
+
+a {
+    font-size: 18px;
+    color: white;
+    display: block;
+    background: blue;
+    width: 400px;
+    border-radius: 20px;
+}
