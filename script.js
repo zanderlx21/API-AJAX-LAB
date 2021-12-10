@@ -10,7 +10,6 @@ awwPromise.then(data => {
         const newImage = document.createElement("img")
         const newLink = document.createElement("a")
 
-        // let name = data.data.children[i].data.name
         let title = data.data.children[i].data.title
         let image = data.data.children[i].data.thumbnail
         let link = data.data.children[i].data.url
@@ -19,8 +18,6 @@ awwPromise.then(data => {
        newImage.src = image;
        newLink.href = link;
        newLink.innerText = "Click here to visit the post!";
-
-    //    Link.setAttribute("href", ${link});
 
        body.append(newDiv); 
        newDiv.appendChild(newTitle);
