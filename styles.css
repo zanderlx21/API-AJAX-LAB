@@ -16,7 +16,9 @@ a {
     font-size: 18px;
     color: white;
     display: block;
-    background: blue;
+    background: rgb(68, 68, 235);
     width: 400px;
     border-radius: 20px;
+    padding: 3px;
+    text-align: center;
 }
