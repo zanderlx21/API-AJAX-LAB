@@ -12,17 +12,23 @@ awwPromise.then(data => {
 
         let title = data.data.children[i].data.title
         let image = data.data.children[i].data.thumbnail
-        let link = data.data.children[i].data.url
+        let link = data.data.children[i].data.permalink
+
+        console.log(link);
 
        newTitle.innerHTML = title;
        newImage.src = image;
-       newLink.href = link;
+       newLink.href = "https://reddit.com" + link;
        newLink.innerText = "Click here to visit the post!";
+       newLink.target = "_blank"
 
        body.append(newDiv); 
        newDiv.appendChild(newTitle);
        newDiv.appendChild(newImage);
        newDiv.appendChild(newLink);
     }
+})
+.catch (e => {
+    console.log(e);
 });   
 
